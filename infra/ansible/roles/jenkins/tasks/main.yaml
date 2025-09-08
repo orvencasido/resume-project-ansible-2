@@ -1,0 +1,5 @@
+---
+- name: Install Jenkins
+  script: "{{ playbook_dir }}/../scripts/install-jenkins.sh"
+
+# kubectl exec --namespace jenkins -it svc/jenkins -c jenkins -- /bin/cat /run/secrets/additional/chart-admin-password && echo

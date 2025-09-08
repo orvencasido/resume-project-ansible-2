@@ -1,0 +1,3 @@
+---
+- name: Install Helm
+  script: "{{ playbook_dir }}/../scripts/install-helm.sh"

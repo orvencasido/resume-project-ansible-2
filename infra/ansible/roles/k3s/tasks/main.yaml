@@ -1,0 +1,11 @@
+---
+- name: Check if K3s is already installed
+  stat:
+    path: /usr/local/bin/k3s
+  register: k3s_binary
+
+- name: Install K3s
+  shell: curl -sfL https://get.k3s.io | sh -
+  args:
+    executable: /bin/bash
+  when: not k3s_binary.stat.exists

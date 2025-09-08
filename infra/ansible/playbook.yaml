@@ -1,0 +1,10 @@
+---
+  - hosts: server1
+    become: yes
+    roles:
+      - update
+      - docker
+      - k3s
+      - helm
+      - jenkins
+
