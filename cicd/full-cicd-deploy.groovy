@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE = "orvencasido/resume-project-ansible"
+        DOCKER_IMAGE = "orvencasido/resume-project-ansible-2"
         VERSION = "${env.BUILD_NUMBER}"
     }
 
